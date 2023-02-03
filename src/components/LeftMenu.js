@@ -9,27 +9,27 @@ import profile from "../icons/user.png";
 
 const LeftMenu = () => (
 	<StyledLeftMenu>
-		<div class="sidebar">
-			<div class="logo">
+		<div className="sidebar">
+			<div className="logo">
 				<img src={zocket} alt="zocket-icon" width={45} height={45} />
 			</div>
 
-			<div class="nav-item">
+			<div className="nav-item">
 				<img src={house} alt="home-icon" />
 				<p>Home</p>
 			</div>
 
-			<div class="nav-item active">
+			<div className="nav-item active">
 				<img src={volume} alt="volume-icon" />
 				<p>Campaign</p>
 			</div>
 
-			<div class="nav-item">
+			<div className="nav-item">
 				<img src={bag} alt="bag-icon" />
 				<p>Prodcuts</p>
 			</div>
 
-			<div class="nav-item">
+			<div className="nav-item">
 				<img src={profile} alt="" />
 				<p>Customers</p>
 			</div>

@@ -5,7 +5,7 @@ export const StyledLeftMenu = styled.div`
 		box-sizing: border-box;
 		position: absolute;
 		width: 82px;
-		height: 100%;
+		height: 100vh;
 		left: 0px;
 		top: -5px;
 		background: #001738;
