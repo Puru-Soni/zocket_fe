@@ -5,7 +5,7 @@ const Card = ({ icon, heading, sub_heading }) => {
 	return (
 		<StyledCard className="card">
 			<div>
-				<img src={icon} alt={heading} />
+				<img src={icon} alt="" />
 			</div>
 			<div className="main-content">
 				<span className="heading">{heading}</span>

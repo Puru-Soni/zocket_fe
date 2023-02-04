@@ -1,10 +1,9 @@
 import "./App.css";
-import Sidebar from "./components/Sidebar";
-import Navbar from "./components/Navbar";
-import CampPage from "./components/Camp/CampPage.js";
+import Campaign from "./pages/Campaign";
 import React, { Fragment } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
+import CreateNewCampaign from "./components/CreateNewCampaign";
 
 function App() {
 	return (
@@ -12,12 +11,12 @@ function App() {
 			<Fragment>
 				<Routes>
 					<Route exact path="/" element={<Dashboard />} />
-					<Route exact path="/campaign" element={<CampPage />} />
-					{/* <Route
+					<Route exact path="/campaign" element={<Campaign />} />
+					<Route
 						exact
 						path="/createNewCampaign"
 						element={<CreateNewCampaign />}
-					/> */}
+					/>
 				</Routes>
 			</Fragment>
 		</BrowserRouter>

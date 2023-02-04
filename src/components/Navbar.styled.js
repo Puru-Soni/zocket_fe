@@ -11,8 +11,11 @@ export const StyledNavbar = styled.div`
 
 	border: 1px solid #dae6ff;
 
+	z-index: 5;
+
 	.navbar-section {
 		display: flex;
+		padding-top: 10px;
 		flex-direction: row;
 		align-items: center;
 		justify-content: end;
@@ -47,6 +50,7 @@ export const StyledNavbar = styled.div`
 	}
 
 	.navbar--buy-plan {
+		height: 30px;
 		display: flex;
 		gap: 0.1em;
 		align-items: center;

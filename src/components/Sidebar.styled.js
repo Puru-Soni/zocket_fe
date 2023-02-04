@@ -5,7 +5,7 @@ export const StyledSidebar = styled.div`
 		box-sizing: border-box;
 		position: absolute;
 		width: 82px;
-		height: 100vh;
+		height: 100%;
 		left: 0px;
 		top: -5px;
 		background: #001738;
@@ -32,7 +32,7 @@ export const StyledSidebar = styled.div`
 		a {
 			text-decoration: none;
 		}
-		
+
 		* {
 			display: flex;
 			flex-direction: column;
