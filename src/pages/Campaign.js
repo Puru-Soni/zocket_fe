@@ -16,7 +16,7 @@ const Campaign = () => {
 	return (
 		<div>
 			<Dashboard />
-			<StyledCampaign>
+			<StyledCampaign className="camp-container">
 				<div className="camp-headers">
 					<div className="camp-head">
 						<h1>Your Campaigns</h1>
@@ -59,7 +59,7 @@ const Campaign = () => {
 				</div>
 				<div className="campaign--main-body-table">
 					<table>
-						<thead>
+						<thead className="thead-camp">
 							<tr>
 								<th>
 									<input type="checkbox" />

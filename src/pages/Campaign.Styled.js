@@ -149,6 +149,11 @@ export const StyledCampaign = styled.div`
 	}
 
 	.campaign--main-body-table-rows-campaign-col img {
+		height: 54px;
+		width: 58px;
+
+		border-radius: 5px;
+
 		width: 2.5em;
 		border: 1px solid black;
 		border-radius: 5px;
@@ -161,6 +166,21 @@ export const StyledCampaign = styled.div`
 		color: red;
 	}
 	.campaign--main-body-table-rows-status-col p {
+		font-family: Eudoxus Sans;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 32px;
+		letter-spacing: 0px;
+		text-align: left;
+		strong {
+			font-family: Eudoxus Sans;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 32px;
+			letter-spacing: 0px;
+			text-align: left;
+		}
+
 		padding: 0.25em 1em;
 		border: 1px solid red;
 		width: fit-content;
@@ -254,7 +274,6 @@ export const StyledCampaign = styled.div`
 		background: #0f6eff;
 		border-radius: 10px;
 	}
-
 	.campSteps {
 		box-sizing: border-box;
 

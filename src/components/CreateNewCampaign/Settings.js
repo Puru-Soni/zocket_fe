@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { StyledTable, StyledSettings } from "./Styled";
-import dott from "../../icons/no1.png";
 import { Slider, ToggleButton, ToggleButtonGroup } from "@mui/material";
 
 const radius = [

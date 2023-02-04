@@ -19,7 +19,9 @@ export const StyledNavbar = styled.div`
 		flex-direction: row;
 		align-items: center;
 		justify-content: end;
-
+		margin-top: 1rem;
+		margin-right: 1rem;
+		
 		p {
 			font-family: Eudoxus Sans;
 			font-size: 12px;

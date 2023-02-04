@@ -11,19 +11,20 @@ import Settings from "./CreateNewCampaign/Settings";
 import WhatToDo from "./CreateNewCampaign/WhatToDo";
 import styled from "styled-components";
 import ContinueBtn from "../components/ContinueBtn";
+import { Navigate, NavLink, Route } from "react-router-dom";
+import Campaign from "../pages/Campaign";
 
 const StyledCampaign = styled.div`
 	box-sizing: border-box;
 	background: #f6f9ff;
 	width: 100wh;
-	height: 100vh;
 
 	margin-left: 82px;
-
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 40px 73px 0px 50px;
+	padding-bottom: 50px;
 
 	.camp-head {
 		padding-bottom: 20px;
@@ -112,27 +113,21 @@ export default function StepperProgress() {
 					})}
 				</Stepper>
 				{activeStep === steps.length ? (
-					<React.Fragment>
-						<Typography sx={{ mt: 2, mb: 1 }}>COMPLETED</Typography>
-						<Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
-							<Box sx={{ flex: "1 1 auto" }} />
-							<Button onClick={handleReset}>Reset</Button>
-						</Box>
-					</React.Fragment>
+					 <Navigate to='../campaign' />
 				) : (
 					<React.Fragment>
 						<Typography className="campSteps" sx={{ mt: 2, mb: 1 }}>
-								{activeStep === 0 ? (
-									<WhatToDo />
-								) : activeStep === 1 ? (
-									<ChooseProduct />
-								) : activeStep === 2 ? (
-									<Settings />
-								) : activeStep === 3 ? (
-									<ReadyToGo />
-								) : (
-									""
-								)}
+							{activeStep === 0 ? (
+								<WhatToDo />
+							) : activeStep === 1 ? (
+								<ChooseProduct />
+							) : activeStep === 2 ? (
+								<Settings />
+							) : activeStep === 3 ? (
+								<ReadyToGo />
+							) : (
+								""
+							)}
 						</Typography>
 						<Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
 							<Button
@@ -146,7 +141,7 @@ export default function StepperProgress() {
 							<Box sx={{ flex: "1 1 auto" }} />
 
 							<Button onClick={handleNext}>
-								<ContinueBtn text="Continue"/>
+								<ContinueBtn text="Continue" />
 							</Button>
 						</Box>
 					</React.Fragment>

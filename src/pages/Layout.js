@@ -4,7 +4,7 @@ import Sidebar from '../components/Sidebar';
 
 const Layout = () => {
   return (
-		<div>
+		<div >
 			<Sidebar />
 			<Navbar />
 		</div>
