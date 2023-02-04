@@ -3,7 +3,9 @@ import ChooseProduct from "./ChooseProduct";
 import styled from "styled-components";
 import Settings from "./Settings";
 import WhatToDo from "./WhatToDo";
-
+import ReadyToGo from "./ReadyToGo";
+import { Step, StepLabel, Stepper } from "@mui/material";
+import Dashboard from "../../pages/Dashboard";
 
 const CampPageStyles = styled.div`
 	box-sizing: border-box;
@@ -20,19 +22,26 @@ const CampPageStyles = styled.div`
 
 const CampPage = () => {
 	return (
-		<CampPageStyles>
-			{/* <div>
-				<ChooseProduct />
-			</div> */}
+		<div>
+			<Dashboard />
+			<CampPageStyles>
+				{/* <div>
+					<ChooseProduct />
+				</div>
 
-			{/* <div>
-				<WhatToDo />
-			</div> */}
+				<div>
+					<WhatToDo />
+				</div>
 
-			<div>
-                <Settings />
-            </div>
-		</CampPageStyles>
+				<div>
+					<Settings />
+				</div> */}
+
+				<div>
+					<ReadyToGo />
+				</div>
+			</CampPageStyles>
+		</div>
 	);
 };
 

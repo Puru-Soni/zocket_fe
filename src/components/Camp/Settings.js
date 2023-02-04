@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { StyledTable, StyledSettings } from "./Styled";
-import dott from '../../icons/no1.png';
-import { Slider } from "@mui/material";
+import dott from "../../icons/no1.png";
+import { Slider, ToggleButton, ToggleButtonGroup } from "@mui/material";
 
 const radius = [
 	{
@@ -25,6 +25,27 @@ const budget = [
 ];
 
 const Settings = () => {
+	const [alignment, setAlignment] = useState("Lifetime");
+	const [alignment2, setAlignment2] = useState("location");
+
+	const handleChange = () => {
+		const radios = document.querySelectorAll(".radio-select");
+		for (let el of radios) {
+			el.addEventListener("click", function () {
+				setAlignment(el.value);
+			});
+		}
+	};
+
+	const handleChange2 = () => {
+		const radios = document.querySelectorAll('.radio-select2');
+		for (let el of radios) {
+			el.addEventListener('click', function () {
+				setAlignment2(el.value);
+			})
+		}
+	};
+
 	return (
 		<StyledTable>
 			<StyledSettings>
@@ -35,10 +56,25 @@ const Settings = () => {
 
 				<div className="setting-config">
 					<div>
-						<img className="top-dott" src={dott} alt="point" />
 						<h3>Budget and dates info</h3>
 						<div class="sub-settings budget">
 							<p>Budget Timeline</p>
+							<div>
+								<ToggleButtonGroup
+									color="primary"
+									value={alignment}
+									exclusive
+									onChange={handleChange}
+									aria-label="Platform"
+								>
+									<ToggleButton className="radio-select" value="Lifetime">
+										Lifetime
+									</ToggleButton>
+									<ToggleButton className="radio-select" value="Daily">
+										Daily
+									</ToggleButton>
+								</ToggleButtonGroup>
+							</div>
 
 							<div className="select-date">
 								<label for="start">Start date</label>
@@ -72,12 +108,32 @@ const Settings = () => {
 						</div>
 					</div>
 					<div>
-						<img className="bottom-dot" src={dott} alt="point" />
 						<h3>Location info</h3>
 						<div className="sub-settings">
 							<p>Location type</p>
 							<div>
+								<ToggleButtonGroup
+									color="primary"
+									value={alignment2}
+									exclusive
+									onChange={handleChange2}
+									aria-label="Platform"
+								>
+									<ToggleButton className="radio-select2" value="location">
+										location
+									</ToggleButton>
+									<ToggleButton className="radio-select2" value="Radius">
+										Radius
+									</ToggleButton>
+								</ToggleButtonGroup>
+							</div>
+							<div>
 								<p>Select Location</p>
+								<input
+									className="location"
+									type="text"
+									placeholder="Select a place name, address or coordinates"
+								/>
 							</div>
 							<div>
 								<p>Select target radius</p>

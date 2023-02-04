@@ -63,9 +63,14 @@ export const StyledSettings = styled.div`
 		text-align: left;
 	}
 
-	.budget{
-		border-left: 1.5px solid rgba(0, 0, 0, 0.16);
+	.location {
+		height: 50px;
+		width: 100%;
+		left: 199px;
+		top: 931px;
+		border-radius: 10px;
 
+		border: 1.5px solid #e9e9e9;
 	}
 
 	.date-info {
@@ -98,7 +103,7 @@ export const StyledSettings = styled.div`
 		padding-left: 26px;
 	}
 
-	top-dott{
+	top-dott {
 		position: absolute;
 		left: 0px;
 		top: 70px;

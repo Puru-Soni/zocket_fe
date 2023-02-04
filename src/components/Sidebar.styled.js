@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledLeftMenu = styled.div`
+export const StyledSidebar = styled.div`
 	.sidebar {
 		box-sizing: border-box;
 		position: absolute;
@@ -9,6 +9,15 @@ export const StyledLeftMenu = styled.div`
 		left: 0px;
 		top: -5px;
 		background: #001738;
+
+		p {
+			font-family: Eudoxus Sans;
+			font-size: 10px;
+			font-weight: 400;
+			line-height: 32px;
+			letter-spacing: 0px;
+			text-align: left;
+		}
 
 		.logo {
 			padding: 0px;
@@ -20,7 +29,11 @@ export const StyledLeftMenu = styled.div`
 			margin-bottom: 80%;
 		}
 
-		div {
+		a {
+			text-decoration: none;
+		}
+		
+		* {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -28,7 +41,7 @@ export const StyledLeftMenu = styled.div`
 			color: #ffffff;
 		}
 
-		.nav-item{
+		.nav-item {
 			padding: 10%;
 			height: 58px;
 		}

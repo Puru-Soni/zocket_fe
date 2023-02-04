@@ -1,4 +1,4 @@
-import cake1 from '../../icons/cakes/1.png';
+import cake1 from "../../icons/cakes/1.png";
 import cake2 from "../../icons/cakes/2.png";
 import cake3 from "../../icons/cakes/3.png";
 import cake4 from "../../icons/cakes/4.png";
@@ -7,6 +7,8 @@ import cake6 from "../../icons/cakes/6.png";
 import cake7 from "../../icons/cakes/7.png";
 import cake8 from "../../icons/cakes/8.png";
 import cake9 from "../../icons/cakes/9.png";
+import profile_user from '../../icons/profile-user.png';
+import cakeTemplate from "../../icons/cake_image.png";
 
 export const whatYouWantToDo = [
 	{
@@ -92,5 +94,40 @@ export const productsData = [
 		name: "Stawberry cakes with blueberry",
 		price: "Rs:2,345",
 		image: cake9,
+	},
+];
+
+export const ReadyData = [
+	{
+		title: "Mukund Cake Shop",
+		sub_title: "Sponsored",
+		profile: profile_user,
+		content:
+			"We are the best bakery around you. Please like my page to get updates on exciting offers and discounts",
+		image: cakeTemplate,
+	},
+	{
+		title: "Mukund Cake Shop",
+		sub_title: "Sponsored",
+		profile: profile_user,
+		content:
+			"We are the best bakery around you. Please like my page to get updates on exciting offers and discounts",
+		image: cakeTemplate,
+	},
+	{
+		title: "Mukund Cake Shop",
+		sub_title: "Sponsored",
+		profile: profile_user,
+		content:
+			"We are the best bakery around you. Please like my page to get updates on exciting offers and discounts",
+		image: cakeTemplate,
+	},
+	{
+		title: "Mukund Cake Shop",
+		sub_title: "Sponsored",
+		profile: profile_user,
+		content:
+			"We are the best bakery around you. Please like my page to get updates on exciting offers and discounts",
+		image: cakeTemplate,
 	},
 ];
